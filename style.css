@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,65 +9,61 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 nav {
-  background: #0082e6;
-  height: 80px;
   width: 100%;
+  height: 80px;
+  background-color: aquamarine;
 }
 
 label.logo {
-  color: white;
   font-weight: bold;
   font-size: 2rem;
   line-height: 80px;
   padding: 0 100px;
 }
 
-nav ul {
+ul {
   float: right;
-  margin-right: 20px;
+  /* padding-right: 50px; */
 }
 
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin-right: 10px;
 }
 
-nav ul li a {
-  color: white;
-  font-size: 1.2rem;
+ul li a {
+  color: black;
+  padding: 10px 25px;
   text-transform: uppercase;
-  padding: 7px 13px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
-nav ul li a:hover {
-  background: #1b9bff;
-  transition: 0.4s;
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  cursor: pointer;
-  line-height: 80px;
-  margin-right: 40px;
-  display: none;
+ul li a:hover {
+  background-color: rgb(198, 255, 236);
+  transition: 0.3s;
 }
 
 #check {
   display: none;
 }
 
-@media (max-width: 750px) {
+.checkbtn {
+  float: right;
+  line-height: 80px;
+  font-size: 1.5rem;
+  margin-right: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
   label.logo {
     font-size: 1.5rem;
-    padding-left: 50px;
   }
   .checkbtn {
     display: block;
@@ -74,20 +72,21 @@ nav ul li a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background-color: antiquewhite;
     top: 80px;
-    left: -100%;
     text-align: center;
-    transition: all 0.3s;
+    left: -100%;
+    transition: 0.4s;
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
     line-height: 30px;
+    margin: 50px 0;
   }
   nav ul li a:hover {
     background: none;
-    color: #0082e6;
+    color: blue;
+    transition: 0.3s;
   }
   #check:checked ~ ul {
     left: 0;
